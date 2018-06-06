@@ -1,0 +1,26 @@
+body {
+	height: 100%;
+	position: relative;
+	-webkit-animation: background 60s linear infinite;
+	animation: background 60s linear infinite;  
+}
+
+#reset {
+	opacity:0;
+}
+
+#reset:hover {
+	opacity:1.0;
+}
+
+#tools {
+	display:none;
+	position: absolute; 
+	left: 50%;
+	transform:
+	translate(-50%, 200px);
+}
+
+#tools p {
+	text-align: center;
+	}

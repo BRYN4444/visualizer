@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BRYN.info - Visualizer - Pick Your Colors</title>
+	<link rel="shortcut icon" href="/favicon.gif" type="image/gif" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.keyframes.min.js"></script>
+	<script type="text/javascript" src="js/spectrum.js"></script>
+	<link type="text/css" href="css/spectrum.css?raw=1" rel="stylesheet" />
+	<link type="text/css" href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="reset">
+		<input type="button" value="Reset Page" onclick="window.location.href='http://bryn.info/pages/visualizer/'" />
+	</div>
+	<div id="tools">
+		<p>Please select at least two colors.</p>
+		<form method="link" action="http://bryn.info/pages/visualizer" autocomplete="off">
+			Length: <input type="text" name="t" size="3" value="60s" />
+			Colors:
+				<select id="dropdown">
+					<option value="5">5</option>
+					<option value="4">4</option>
+					<option value="3">3</option>
+					<option value="2">2</option>
+				</select>
+			<button type='submit' value='Visualize'>Visualize</button>
+			<br />
+			<input type="text" name="c1" id="picker1" class="picker" />&nbsp;
+			<input type="text" name="c2" id="picker2" class="picker" />&nbsp;
+			<input type="text" name="c3" id="picker3" class="picker" />&nbsp;
+			<input type="text" name="c4" id="picker4" class="picker" />&nbsp;
+			<input type="text" name="c5" id="picker5" class="picker" />
+		</form>
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
